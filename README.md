@@ -112,6 +112,15 @@ cargo run --release -- --collection hazelnut score data/test/crack/*.png --thres
 - `fit` deletes and recreates the collection each time.
 - If the ONNX Runtime download fails (offline or restricted network), build with the `load-dynamic` feature of `ort` and set `ORT_DYLIB_PATH` to a local `libonnxruntime` (for example the one shipped inside the `onnxruntime` pip package).
 
+
+## Images from Kaggle
+
+```bash
+#!/bin/bash
+curl -L -o ~/Downloads/mvtec-ad.zip\
+  https://www.kaggle.com/api/v1/datasets/download/ipythonx/mvtec-ad
+```
+
 ## Files
 
 ```
