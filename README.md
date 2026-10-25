@@ -121,6 +121,30 @@ curl -L -o ~/Downloads/mvtec-ad.zip\
   https://www.kaggle.com/api/v1/datasets/download/ipythonx/mvtec-ad
 ```
 
+## Successful output example
+```bash
+❯ cargo run --release -- --collection hazelnut score data/test/print/*.png --threshold 0.77 --save-map
+    Finished `release` profile [optimized] target(s) in 0.28s
+     Running `target/release/patchcore-qdrant --collection hazelnut score data/test/print/000.png data/test/print/001.png data/test/print/002.png data/test/print/003.png data/test/print/004.png data/test/print/005.png data/test/print/006.png data/test/print/007.png data/test/print/008.png data/test/print/009.png data/test/print/010.png data/test/print/011.png data/test/print/012.png data/test/print/013.png data/test/print/014.png data/test/print/015.png data/test/print/016.png --threshold 0.77 --save-map`
+   1.015  data/test/print/000.png  ANOMALOUS
+   0.984  data/test/print/001.png  ANOMALOUS
+   1.122  data/test/print/002.png  ANOMALOUS
+   0.856  data/test/print/003.png  ANOMALOUS
+   0.954  data/test/print/004.png  ANOMALOUS
+   0.903  data/test/print/005.png  ANOMALOUS
+   1.036  data/test/print/006.png  ANOMALOUS
+   0.972  data/test/print/007.png  ANOMALOUS
+   1.232  data/test/print/008.png  ANOMALOUS
+   0.884  data/test/print/009.png  ANOMALOUS
+   1.043  data/test/print/010.png  ANOMALOUS
+   1.027  data/test/print/011.png  ANOMALOUS
+   1.040  data/test/print/012.png  ANOMALOUS
+   0.859  data/test/print/013.png  ANOMALOUS
+   0.894  data/test/print/014.png  ANOMALOUS
+   0.775  data/test/print/015.png  ANOMALOUS
+   0.913  data/test/print/016.png  ANOMALOUS
+```
+
 ## Files
 
 ```
