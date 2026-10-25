@@ -1,0 +1,21 @@
+# Rust build output
+/target/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Generated model: recreate with `python3 export_onnx.py`
+backbone.onnx
+
+# MVTec AD dataset: large, download it separately (see data/license.txt)
+/data/
+
+# Anomaly maps written next to scored images by `--save-map`
+*.map.png
+
+# Editor and OS files
+.DS_Store
+.idea/
+.vscode/

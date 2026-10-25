@@ -1,0 +1,18 @@
+[package]
+name = "patchcore-qdrant"
+version = "0.1.0"
+edition = "2024"
+description = "Minimal few-shot anomaly detection: PatchCore features + Qdrant as the memory bank"
+authors = ["Ian"]
+
+[dependencies]
+anyhow = "1"
+clap = { version = "4", features = ["derive"] }
+image = { version = "0.25", default-features = false, features = ["png", "jpeg"] }
+ndarray = "0.17.2"
+ort = "=2.0.0-rc.15"
+qdrant-client = "1.20"
+tokio = { version = "1.54.1", features = ["macros", "rt-multi-thread"] }
+
+[profile.release]
+opt-level = 3
